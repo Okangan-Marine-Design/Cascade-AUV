@@ -6,4 +6,5 @@
 - [State Machines: An Overview](prototypes/planner/README.md)
 - [Twist Ros2_to_GZ_SIM v1.0](prototypes/gazeboMovePlugin/README.md)
 - [Orca4 Nav2 Plugins](prototypes/orca_nav2/README.md)
+- [Hardware Integration Package](ros2_ws/src/hardware_integration/README.md)
 - [ESP Bridge](esp-bridge/README.md)
