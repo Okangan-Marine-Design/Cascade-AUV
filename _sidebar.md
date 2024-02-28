@@ -1,4 +1,6 @@
 - [Home](/)
+- [# List of relevant ros2 cli commands i've found](cli_commands.md)
+- [ESP Bridge](prototypes/esp-bridge/README.md)
 - [State Machines: An Overview](prototypes/planner/README.md)
 - [Twist Ros2_to_GZ_SIM v1.0](prototypes/gazeboMovePlugin/README.md)
 - [Hardware Integration Package](ros2_ws/src/hardware_integration/README.md)
