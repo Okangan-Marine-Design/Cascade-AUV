@@ -1,8 +1,8 @@
-#Hardware Integration Package
+# Hardware Integration Package
 
-##nodes
+## nodes
 ---
-###serial_intake 
+### serial_intake 
 used to get sensor reading data from esp32 serial bridge, publishes to /rawJson
-###json_parser
+### json_parser
 used to parse json data received from serial_intake, subscribed to /rawJson
