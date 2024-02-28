@@ -1,7 +1,4 @@
 - [Home](/)
-- [ORB_SLAM3_ROS2](prototypes/slam/src/orbslam3_ros2/README.md)
-- [Orca4 Nav2 Plugins](prototypes/slam/src/orca_nav2/README.md)
 - [State Machines: An Overview](prototypes/planner/README.md)
 - [Twist Ros2_to_GZ_SIM v1.0](prototypes/gazeboMovePlugin/README.md)
 - [Hardware Integration Package](ros2_ws/src/hardware_integration/README.md)
-- [ESP Bridge](esp-bridge/README.md)
