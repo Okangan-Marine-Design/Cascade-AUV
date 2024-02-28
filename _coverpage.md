@@ -11,4 +11,4 @@
 - Arduino
 
 [GitHub](https://github.com/marinedesign/software-team/)
-[Get Started](#docsify)
+[Get Started](#main)
