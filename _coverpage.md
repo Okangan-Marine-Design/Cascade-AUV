@@ -6,9 +6,10 @@
 
 > Software Repository Documentation
 
+- ROS2
 - C++ and Python
 - Jetson Orin Nano
 - Arduino
 
-[GitHub](https://github.com/marinedesign/software-team/)
+[GitHub](https://github.com/Okangan-Marine-Design/Cascade)
 [Get Started](#main)
