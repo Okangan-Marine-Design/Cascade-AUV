@@ -1,4 +1,3 @@
-- [Home](/)
 - [Marine Design Software](README.md)
 - [ORB_SLAM3_ROS2](prototypes/slam/src/orbslam3_ros2/README.md)
 - [Orca4 Nav2 Plugins](prototypes/slam/src/orca_nav2/README.md)
