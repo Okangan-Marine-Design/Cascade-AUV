@@ -8,7 +8,7 @@ This repository contains the software for the Cascade AUV
 
 We use ROS2 to facilitate internal communication between all the programs involved in our sub. We have aimed for a modular format, which may look a little confusing at first visually, however it allows for each part of the system to be isolated and tested easily, whether it be in simulation or just unit testing. 
 
-![ROS Graph](diagrams/rosgraph5.png)
+![ROS Graph](/diagrams/rosgraph5.png)
 
 ## Automated Planning
 PyTrees
