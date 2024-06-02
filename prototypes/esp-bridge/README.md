@@ -78,41 +78,36 @@ We use polymorphism to create a common interface for all sensors. This allows us
 
 ## JSON Structure
 
-For the JSON object this is what the esp bridge receives, the structure is as follows this can change in the future:
+For the JSON object this is what the esp bridge receives, the structure is as follows this can change in the future
+Note that the order that the array is in is important. This must match with the config file.
+:
 
 ```json
 {
   "actuators": {
-    // These are the main actuators that we can control
     "thrusters": [
       {
-        "id": "1",
         "speed": 0
       },
       {
-        "id": "2",
         "speed": 0
       },
       {
-        "id": "3",
         "speed": 0
       },
       {
-        "id": "4",
         "speed": 0
       }
     ],
     "servos": [
-      // This is an array of servos not used now but if we add servos in the future we can add them here
       {
-        "id": "1",
         "angle": 0
       }
     ],
-    "motors": [] // This is an empty array for now if we add motors in the future we can add them here
+    "motors": []
   }
 }
 ```
 
 it should be sent to the ESP with no spaces or new lines. You can use this for testing:
-{"actuators":{"thrusters":[{"id":"1","speed":0},{"id":"2","speed":0},{"id":"3","speed":0},{"id":"4","speed":0}],"servos":[{"id":"1","angle":0}],"motors":[]}}
+{"actuators":{"thrusters":[{"speed":0},{"speed":0},{"speed":0},{"speed":0}],"servos":[{"angle":0}],"motors":[]}}
