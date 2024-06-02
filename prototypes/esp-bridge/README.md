@@ -87,21 +87,26 @@ Note that the order that the array is in is important. This must match with the 
   "actuators": {
     "thrusters": [
       {
-        "speed": 0
+        "speed": 0,
+        "id": 1
       },
       {
-        "speed": 0
+        "speed": 0,
+        "id": 2
       },
       {
-        "speed": 0
+        "speed": 0,
+        "id": 3
       },
       {
-        "speed": 0
+        "speed": 0,
+        "id": 4
       }
     ],
     "servos": [
       {
-        "angle": 0
+        "angle": 0,
+        "id": 5 // note that the id continues from the last id in the previous array this is important
       }
     ],
     "motors": []
@@ -110,4 +115,4 @@ Note that the order that the array is in is important. This must match with the 
 ```
 
 it should be sent to the ESP with no spaces or new lines. You can use this for testing:
-{"actuators":{"thrusters":[{"speed":0},{"speed":0},{"speed":0},{"speed":0}],"servos":[{"angle":0}],"motors":[]}}
+{"actuators":{"thrusters":[{"speed":0,"id":1},{"speed":0,"id":2},{"speed":0,"id":3},{"speed":0,"id":4}],"servos":[{"angle":0,"id":5}],"motors":[]}}
