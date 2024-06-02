@@ -83,45 +83,36 @@ For the JSON object this is what the esp bridge receives, the structure is as fo
 ```json
 {
   "actuators": {
-    "thrusters": {
-      "motor1": {
-        "speed": 0, // Speed of the motor from -100 to 100
-        "id": 1 // The id of the motor
+    // These are the main actuators that we can control
+    "thrusters": [
+      {
+        "id": "1",
+        "speed": 0
       },
-      "motor2": {
-        "speed": 0,
-        "id": 2
+      {
+        "id": "2",
+        "speed": 0
       },
-      "motor3": {
-        "speed": 0,
-        "id": 3
+      {
+        "id": "3",
+        "speed": 0
       },
-      "motor4": {
-        "speed": 0,
-        "id": 4
-      },
-      "motor5": {
-        "speed": 0,
-        "id": 5
-      },
-      "motor6": {
-        "speed": 0,
-        "id": 6
-      },
-      "motor7": {
-        "speed": 0,
-        "id": 7
-      },
-      "motor8": {
-        "speed": 0,
-        "id": 8
+      {
+        "id": "4",
+        "speed": 0
       }
-    },
-    "servos": {
-      "servo1": {
-        "angle": 0 // Angle of the servo from 0 to 180
+    ],
+    "servos": [
+      // This is an array of servos not used now but if we add servos in the future we can add them here
+      {
+        "id": "1",
+        "angle": 0
       }
-    }
+    ],
+    "motors": [] // This is an empty array for now if we add motors in the future we can add them here
   }
 }
 ```
+
+it should be sent to the ESP with no spaces or new lines. You can use this for testing:
+{"actuators":{"thrusters":[{"id":"1","speed":0},{"id":"2","speed":0},{"id":"3","speed":0},{"id":"4","speed":0}],"servos":[{"id":"1","angle":0}],"motors":[]}}
