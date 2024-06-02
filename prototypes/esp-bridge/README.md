@@ -75,3 +75,53 @@ We use polymorphism to create a common interface for all sensors. This allows us
 - File names are all lowercase (except for README.md)
 - For sensor files, the file name is the same as the sensor name without the word "sensor" (e.g. temperature.cpp) or (e.g. leak.cpp)
 - For sensor classes, if there is a generic type type of sensor we should try to make the code as generic as possible. For example, the kill switch sensor is a switch sensor, so we create a base class called SwitchSensor then we can instantiate a switch sensor with a pin and a name. This allows us to easily add more sensors in the future. This is much better than creating a new class for each sensor type.
+
+## JSON Structure
+
+For the JSON object this is what the esp bridge receives, the structure is as follows this can change in the future:
+
+```json
+{
+  "actuators": {
+    "thrusters": {
+      "motor1": {
+        "speed": 0, // Speed of the motor from -100 to 100
+        "id": 1 // The id of the motor
+      },
+      "motor2": {
+        "speed": 0,
+        "id": 2
+      },
+      "motor3": {
+        "speed": 0,
+        "id": 3
+      },
+      "motor4": {
+        "speed": 0,
+        "id": 4
+      },
+      "motor5": {
+        "speed": 0,
+        "id": 5
+      },
+      "motor6": {
+        "speed": 0,
+        "id": 6
+      },
+      "motor7": {
+        "speed": 0,
+        "id": 7
+      },
+      "motor8": {
+        "speed": 0,
+        "id": 8
+      }
+    },
+    "servos": {
+      "servo1": {
+        "angle": 0 // Angle of the servo from 0 to 180
+      }
+    }
+  }
+}
+```
