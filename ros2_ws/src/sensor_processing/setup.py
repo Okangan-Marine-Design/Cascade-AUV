@@ -20,12 +20,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'dvl=sensor_processing.Dvl:main',
             'pid=sensor_processing.PIDController:main',
             'pid_combiner=sensor_processing.PIDCombiner:main',
-            'imu=sensor_processing.Imu:main',
-            'water_depth=sensor_processing.WaterDepth:main',
-            'sim_adapter=sensor_processing.SimAdapter:main'
+            'sim_adapter=sensor_processing.SimAdapter:main',
+            'eryk-pub=sensor_processing.ErykTestPub:main',
+            'eryk-sub=sensor_processing.ErykTestSub:main'
         ],
     },
 )
