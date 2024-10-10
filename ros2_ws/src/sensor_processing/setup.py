@@ -24,8 +24,8 @@ setup(
             'pid=sensor_processing.PIDController:main',
             'pid_combiner=sensor_processing.PIDCombiner:main',
             'imu=sensor_processing.Imu:main',
-            'water_depth=sensor_processing.WaterDepth:main',
-            'sim_adapter=sensor_processing.SimAdapter:main'
+            'Anitestpub=sensor_processing.Anitestpub:main',
+            'Anitestsub=sensor_processing.Anitestsub:main'
         ],
     },
 )
